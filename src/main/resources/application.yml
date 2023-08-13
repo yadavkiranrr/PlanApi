@@ -1,0 +1,27 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Kiran@1234
+    url: jdbc:mysql://localhost:3306/project
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+
+plan-api:
+  messages:
+   planSaveSucc: Plan Saved Successfully
+   planSaveFail: Plan Save Failed
+   planUpdateSucc: Plan Update Successfully
+   planUpdateFail: Plan Update Failed
+   planDeleteSucc: Plan Delete Successfully
+   planDeleteFail: Plan Delete Fail
+   planStatusChange: Plan Status Change Successfully
+   planStatusChangeFail: Plan Status Change Failed
+   
